@@ -4,13 +4,14 @@ const fs = require('fs');
 const tar = require('tar');
 const path = require('path');
 const tmp = require('tmp');
+const spawn = require('cross-spawn')
 
 Promise.promisifyAll(childProcess);
 Promise.promisifyAll(fs);
 Promise.promisifyAll(tar);
 Promise.promisifyAll(tmp);
 
-const { execFileAsync, spawn } = childProcess;
+const { execFileAsync } = childProcess;
 const { unlinkAsync } = fs;
 
 tmp.setGracefulCleanup();

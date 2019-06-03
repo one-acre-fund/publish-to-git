@@ -1,5 +1,5 @@
 {
-  "name": "publish-to-git",
+  "name": "@oneacrefund/publish-to-git",
   "version": "1.1.7",
   "description": "Publish private npm packages to Git repositories with npm publish semantics",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.1",
+    "cross-spawn": "^6.0.5",
     "tar": "^4.4.4",
     "tmp": "0.0.33",
     "yargs": "^11.0.0"
